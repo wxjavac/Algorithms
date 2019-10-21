@@ -1,0 +1,24 @@
+	void lineedit(){
+
+		InitStrack(s);
+		ch=getChar();
+		while(ch!=EOF){
+			while(ch!=EOF&&ch!=‘/n’){
+				switch(ch){
+					case ‘#’:pop(s,c);break;
+					case ‘@‘:clearStack(s);break;
+					default :push(S,ch);break;
+					}
+ 				ch=getChar();
+			
+			}
+		clearStrack(s);
+		if(ch!=EOF) ch=getChar();
+		
+		}
+
+
+		destroyStack(s);
+
+
+} 
